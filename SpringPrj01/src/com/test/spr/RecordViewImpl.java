@@ -11,6 +11,7 @@ import java.util.Scanner;
 public class RecordViewImpl implements RecordView
 {
 	// 주요 속성 구성 → 특정 클래스 타입이 아닌 인터페이스 타입
+	// 서비스 추상화의 개념 
 	private Record record;  //-- 생성자, setter()
 	
 	@Override
@@ -18,7 +19,7 @@ public class RecordViewImpl implements RecordView
 	{
 		this.record = record;
 	}
-
+    //
 	@Override
 	public void input()
 	{

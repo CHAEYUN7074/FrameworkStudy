@@ -14,6 +14,7 @@ public class Main
 		
 		// ① RecordImpl1(Record 타입) 객체 생성 과정
 		//Record rec1 = new RecordImpl1();				//-- dependency (의존 객체)
+		//f 강의장의 일원으로 진하 생성
 		
 		// ② RecordImpl2(Record 타입) 객체 생성 과정
 		Record rec2 = new RecordImpl2();				//-- dependency (의존 객체)
@@ -27,12 +28,13 @@ public class Main
 		//   느슨한 결합(인터페이스)을 구성할 수 있게 되고,
 		//   한 쪽의 변동 상황이 다른 쪽에 영향을 덜 줄 수 있게 된다.
 		view.setRecord(rec2);							//-- setter injection
-														//   (setter 를 통한 주입)
+		//진하를 넘길지..유동이를 넘길지 				//   (setter 를 통한 주입)
 		
 		//-----------------------------------------------------------------------------
-		
+		//view.setRecord(rec2);에서 진하를 넘긴다고 했다면
 		view.input();
+		//진하의 밥먹기
 		view.output();
-		
+		//진하의 화장실
 	}
 }

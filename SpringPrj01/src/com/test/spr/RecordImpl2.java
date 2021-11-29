@@ -2,7 +2,7 @@
  	 RecordImpl2.java
  	 - 클래스
  	 - Record 인터페이스를 구현하는 클래스
- 	 - RecordImpl1 의 적용 업무와 차별화
+ 	 - RecordImpl1 의 적용 업무와 차별화(기본점수 포함)
 =============================================*/
 
 package com.test.spr;

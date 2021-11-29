@@ -51,9 +51,13 @@ public class Main
 		
 		// 『getBean()』 메소드를 이용하여 사용자가 원하는 객체를 얻는다.
 		// 메소드 인자값으로 id 속성값을 지정하게 된다.
+		/*Object view = context.getBean*/
+        /*--return자료형 object*--> object 타입의 view받아오려면 이렇게*/
 		//RecordView view = (RecordViewImpl)context.getBean("view");
+		                   //---------------이렇게 타입을 바꾸는걸 캐스팅이라고한다.
 		//RecordView 타입의 view 얻어야하니까
 		// 스프링 3.0 이후 버전부터 사용 가능한 코드 
+
 		RecordView view = context.getBean("view", RecordViewImpl.class);
 				         //-------------------------------------------레코드viewImpl타입
 		                 //view라는 bean 가지고 있지? 그거 RecordViewImpl 형식으로 만들어서 가져와봐
@@ -62,5 +66,6 @@ public class Main
 		view.output();
 		//xml에서 1,2 숫자 바꿔주면 기본점수 포함된거 안된거 출력할 수 있다
 		//springPrj01에서는 메인에서 바꿔줘야하거든 좋아좋아
+		//거기에있는 input, output 메소드 호출
 	}
 }

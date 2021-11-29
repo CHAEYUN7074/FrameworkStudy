@@ -8,9 +8,9 @@ package com.test.spr;
 
 public class RecordImpl1 implements Record
 {
-	// 주요 속성 구성
+	// 주요 속성 구성 
 	private int kor, eng, mat;
-
+	
 	@Override
 	public void setKor(int kor)
 	{
